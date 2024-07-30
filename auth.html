@@ -1,0 +1,211 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Authentication</title>
+    <link href="auth.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <hr />
+      <nav>
+        <div class="links">
+          <a href="home.html">Home</a>
+          <a href="#">Discover</a>
+          <a href="#">Marketplace</a>
+        </div>
+        <a class="auth" href="#">
+          <img alt="Register" class="auth" src="images/register.png" />
+        </a>
+      </nav>
+    </header>
+
+    <div class="second-header">
+      <h1>Login / Register Account</h1>
+      <div class="links">
+        <a href="home.html">Home</a>
+        <div class="pointer"></div>
+        <a href="#">Account</a>
+        <div class="pointer"></div>
+        <a href="#">Login / Register</a>
+      </div>
+    </div>
+
+    <main>
+      <div class="login">
+        <h2>Login</h2>
+        <form action="#">
+          <input
+            class="input-item"
+            id="email"
+            placeholder="Email..."
+            required
+            type="email"
+          />
+          <input
+            class="input-item"
+            id="password"
+            placeholder="Password..."
+            required
+            type="password"
+          />
+          <div class="form-footer">
+            <div class="checkbox">
+              <input id="remember" type="checkbox" />
+              <label for="remember">Remember me</label>
+            </div>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div class="register">
+        <h2>Register (New Users)</h2>
+        <form action="#" id="registration">
+          <div class="form-input">
+            <label for="first-name">First Name</label>
+            <input
+              class="input-item"
+              id="first-name"
+              placeholder="First Name"
+              required
+              type="text"
+            />
+          </div>
+          <div class="form-input">
+            <label for="last-name">Last Name</label>
+            <input
+              class="input-item"
+              id="last-name"
+              placeholder="Last Name"
+              required
+              type="text"
+            />
+          </div>
+          <div class="form-input">
+            <label for="new-email">E-mail Address</label>
+            <input
+              class="input-item"
+              id="new-email"
+              placeholder="Email"
+              required
+              type="email"
+            />
+          </div>
+          <div class="form-input">
+            <label for="phone">Phone Number</label>
+            <input
+              class="input-item"
+              id="phone"
+              placeholder="Phone Number"
+              required
+              type="tel"
+            />
+          </div>
+          <div class="form-input">
+            <label for="display-name">Display Name</label>
+            <input
+              class="input-item"
+              id="display-name"
+              placeholder="Display Name"
+              required
+              type="text"
+            />
+          </div>
+          <div class="form-input">
+            <label for="new-password">Password</label>
+            <input
+              class="input-item"
+              id="new-password"
+              placeholder="Password"
+              required
+              type="password"
+            />
+          </div>
+          <div class="form-footer">
+            <div class="checkbox">
+              <input id="add-to-list" type="checkbox" />
+              <label for="add-to-list">Add me to the marketing list</label>
+            </div>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="mailing-box">
+        <h3>Enter your email to subscribe to our newsletter</h3>
+        <form action="#">
+          <input
+            class="input-item"
+            id="newsletter-email"
+            placeholder="Your email"
+            required
+            type="email"
+          />
+          <button type="submit"><img src="images/send.png" /></button>
+        </form>
+      </div>
+
+      <div class="container">
+        <div class="item">
+          <h2>Connect</h2>
+          <hr />
+          <a href="mailto:support@curious.com" target="_blank"
+            >support@curious.com</a
+          >
+          <div class="social">
+            <a href="#"><img alt="Instagram" src="images/Instagram.png" /></a>
+            <a href="#"><img alt="Telegram" src="images/Telegram.png" /></a>
+            <a href="#"><img alt="Twitter" src="images/Twitter.png" /></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <h2>Mobile app</h2>
+          <hr />
+          <button><img alt="App Store" src="images/App%20Store.png" /></button>
+          <button>
+            <img alt="Play Market" src="images/Google%20Play.png" />
+          </button>
+        </div>
+
+        <div class="item">
+          <h2>About</h2>
+          <hr />
+          <details>
+            <summary>About This Marketplace</summary>
+          </details>
+          <details>
+            <summary>Frequently Asked Questions</summary>
+          </details>
+        </div>
+
+        <div class="item">
+          <h2>Legalese</h2>
+          <hr />
+          <details>
+            <summary>Terms</summary>
+          </details>
+          <details>
+            <summary>Privacy</summary>
+          </details>
+          <details>
+            <summary>Returns & Refunds</summary>
+          </details>
+          <details>
+            <summary>Taxes & Fees</summary>
+          </details>
+        </div>
+      </div>
+
+      <div class="sub-footer">
+        <p>©2021 Curios Music. All rights reserved</p>
+        <img alt="Payment" src="images/payment.png" />
+      </div>
+    </footer>
+  </body>
+</html>

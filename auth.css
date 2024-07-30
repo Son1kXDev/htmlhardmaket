@@ -1,0 +1,268 @@
+﻿.second-header {
+  padding: 20px 165px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  background-color: var(--sub-color);
+  border: 1px solid var(--transparent-white);
+  border-left: none;
+  border-right: none;
+
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+
+    .pointer {
+      width: 3px;
+      height: 3px;
+      background-color: var(--gray);
+      border: none;
+      border-radius: 50%;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  column-gap: 62px;
+  justify-content: center;
+  margin-top: 89px;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 28px;
+  }
+}
+
+.login {
+  background-color: var(--sub-color);
+  width: 382px;
+  height: 360px;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 24px 32px;
+}
+
+.register {
+  display: grid;
+  width: 666px;
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 318px);
+    gap: 30px;
+
+    .input-item {
+      padding-left: 24px;
+    }
+
+    .form-input {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+    }
+
+    button {
+      margin-top: 0;
+    }
+  }
+}
+
+.input-item {
+  height: 48px;
+  background-color: transparent;
+  padding-left: 52px;
+  border: 0.5px solid white;
+  border-radius: 48px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  #email,
+  #newsletter-email {
+    background: url("images/email.png") no-repeat scroll 24px 15px;
+  }
+
+  #password {
+    background: url("images/password.png") no-repeat scroll 24px 14px;
+  }
+
+  .form-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    input[type="checkbox"] {
+      accent-color: #5b00fb;
+      background: transparent;
+      width: 14px;
+      height: 14px;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"]:not(:checked) {
+      opacity: 0.2;
+    }
+  }
+
+  button {
+    background: var(--gradient);
+    border: none;
+    border-radius: 46px;
+    padding: 14px 40px;
+
+    margin-top: 45px;
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+
+    cursor: pointer;
+  }
+
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+}
+
+footer {
+  background-color: #09010d;
+  margin-top: 140px;
+  padding-top: 52px;
+
+  .mailing-box {
+    width: 410px;
+    height: 87px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: var(--gradient);
+      border: none;
+      border-radius: 46px;
+      padding: 12px 15px 12px 20px;
+
+      position: absolute;
+      right: 0;
+      margin: 1px;
+      width: 59px;
+      height: 48px;
+
+      cursor: pointer;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 53px;
+    justify-content: center;
+    margin-top: 60px;
+
+    .item {
+      width: 238px;
+
+      h2 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        margin-bottom: 9.5px;
+        text-transform: uppercase;
+      }
+
+      hr {
+        margin-bottom: 16.5px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .social {
+        display: flex;
+        flex-direction: row;
+        column-gap: 12px;
+        margin-top: 12px;
+
+        a {
+          border: 0.5px solid var(--gray);
+          border-radius: 50%;
+          width: 35px;
+          height: 35px;
+          padding: 10px;
+          position: relative;
+
+          img {
+            width: 25px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+
+    details {
+      margin-bottom: 8px;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .sub-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 26px;
+    margin-top: 60px;
+    margin-left: 165px;
+    margin-right: 165px;
+  }
+}

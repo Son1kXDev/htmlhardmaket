@@ -1,0 +1,62 @@
+﻿:root {
+  --dark-color: #101029;
+  --sub-color: #1e1e37;
+  --gradient: linear-gradient(90deg, #5d00fa, #d70bca);
+  --gray: #d0d0d0;
+  --transparent-white: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  background-color: var(--dark-color);
+}
+
+header {
+  height: 106px;
+
+  hr {
+    width: 100%;
+    height: 36px;
+    background-color: var(--sub-color);
+    border: none;
+    border-bottom: 1px solid var(--transparent-white);
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav {
+    margin-top: 26px;
+    display: flex;
+    text-transform: uppercase;
+    align-content: center;
+
+    .links {
+      flex: 1;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: row;
+      column-gap: 50px;
+      transform: translateX(42px);
+    }
+
+    .auth {
+      background-color: transparent;
+      width: 42px;
+      height: 42px;
+      margin-left: auto;
+      margin-right: 165px;
+      cursor: pointer;
+      transform: translateY(-6px);
+    }
+  }
+}
